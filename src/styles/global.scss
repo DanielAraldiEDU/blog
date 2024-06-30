@@ -9,31 +9,18 @@
 }
 
 :root {
-  --white: #ffffff;
-  --white-details: #fefefe;
-  --white-background: #f8f8f8;
-  --medium-white: #f4f0ff;
-  --dark-white: #e2e2e2;
+  --background: #18181b;
+  --background50: rgba(24, 24, 27, 0.5);
+  --background90: rgba(24, 24, 27, 0.9);
 
-  --dark-gray: #737388;
-  --soft-dark-gray: #737380;
-  --medium-gray: #dbdcdd;
-  --gray: #a8a8b3;
-
-  --red: #ea4335;
-  --light-red: #e73d5d;
-
-  --blue: #835afd;
-
-  --purple: #e559f9;
-
-  --black-text: #29292e;
-  --black-shadow: rgba(0, 0, 0, 0.04);
-  --black-overlay: rgba(0, 0, 0, 0.7);
+  --text: #f4f4f5;
 }
 
 body {
-  background: var(--white-background);
+  width: 100%;
+  height: 100vh;
+
+  background: var(--background);
   color: var(--black-text);
 }
 
@@ -42,10 +29,42 @@ input,
 button,
 textarea {
   font:
-    400 1rem 'Roboto',
-    sans-serif;
+    400 1rem "Poppins", sans-serif;
 
   @media (max-width: 768px) {
     font-size: 90%;
   }
+}
+
+.skeleton {
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: var(--background50);
+  }
+  
+  100% {
+    background-color: var(--background90);
+  }
+}
+
+.skeleton-greeting {
+  height: 1.5rem;
+  border-radius: 0.25rem;
+}
+
+.skeleton-title {
+  height: 1.25rem;
+  border-radius: 0.25rem;
+}
+
+.skeleton-text {
+  height: 1rem;
+  border-radius: 0.25rem;
+}
+
+.skeleton-image {
+  border-radius: 0.25rem;
 }
