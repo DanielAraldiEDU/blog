@@ -12,7 +12,7 @@ function SkeletonText(props: SkeletonTextProps) {
 
   const skeletonType: Record<SkeletonTextVariant, string> = {
     text: 'skeleton-text w-40',
-    title: 'skeleton-greeting w-72',
+    title: 'skeleton-greeting w-64 sm:w-72',
   };
 
   return (
