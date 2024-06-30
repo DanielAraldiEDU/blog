@@ -38,7 +38,7 @@ function App() {
                 {postsByPage < 100 && (
                   <button
                     type='button'
-                    className='mb-10 p-1 text-base text-left text-zinc-200 rounded hover:text-zinc-50 transition-colors'
+                    className='mb-8 sm:mb-10 p-1 text-base text-left text-zinc-200 rounded hover:text-zinc-50 transition-colors'
                     onClick={() => setPostsByPage(postsByPage + 10)}
                   >
                     Ver mais postagens
@@ -47,7 +47,7 @@ function App() {
 
                 <p className='text-xl text-zinc-100 font-medium'>Comentários</p>
 
-                <div className='flex flex-col w-3/4 border-t-[1px] px-3 py-4 border-zinc-800 gap-2'>
+                <div className='flex flex-col w-full sm:w-4/5 lg:w-3/4 border-t-[1px] px-3 py-4 border-zinc-800 gap-2 break-words'>
                   {comments.length > 0 ? (
                     <>
                       {comments.slice(0, commentsByPage).map(comment => (

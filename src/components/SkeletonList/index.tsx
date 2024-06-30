@@ -6,11 +6,11 @@ function SkeletonList() {
       {new Array(10).fill(0).map((_, index) => (
         <div
           key={index}
-          className='flex w-3/5 h-96 p-3 gap-4 bg-zinc-800 rounded'
+          className='flex flex-col sm:flex-row w-full md:w-11/12 lg:w-4/5 xl:w-3/5 h-auto sm:h-96 p-3 gap-4 bg-zinc-800 rounded'
         >
-          <div className='skeleton skeleton-image w-1/2 h-full rounded' />
+          <div className='skeleton skeleton-image w-full sm:w-1/2 h-96 sm:h-full rounded' />
 
-          <div className='flex flex-col w-1/2 h-full justify-center gap-6'>
+          <div className='flex flex-col w-full sm:w-1/2 h-full justify-center gap-6'>
             <p className='skeleton skeleton-title w-3/4' />
 
             <div className='flex flex-col gap-1'>
