@@ -29,7 +29,8 @@ input,
 button,
 textarea {
   font:
-    400 1rem "Poppins", sans-serif;
+    400 1rem 'Poppins',
+    sans-serif;
 
   @media (max-width: 768px) {
     font-size: 90%;
@@ -44,7 +45,7 @@ textarea {
   0% {
     background-color: var(--background50);
   }
-  
+
   100% {
     background-color: var(--background90);
   }
